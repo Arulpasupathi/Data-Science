@@ -5,7 +5,7 @@ import pickle
 app = Flask(__name__)
 
 # Load model once at startup
-with open(r"C:\Users\HP\Downloads\Data-Science\Data-Science\models\xgb_car_price_model.pkl", "rb") as f:
+with open(r"C:\Users\HP\Downloads\Data-Science\Data-Science\models\xgb_car_price_model (1).pkl", "rb") as f:
     model = pickle.load(f)
 
 @app.route("/predict", methods=["POST"])
